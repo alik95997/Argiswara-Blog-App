@@ -32,9 +32,9 @@ body {
 
 
 .form {
-    width: 50%;
-    /* width: 700px; */
-    max-width: 100%;
+    /* width: 50%; */
+    width: 700px;
+    max-width: 95%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -52,7 +52,9 @@ body {
 .form-group:nth-child(3),
 .form-group:nth-child(4),
 .form-group:nth-child(5),
-.form-group:nth-child(6) {
+.form-group:nth-child(6) ,
+.form-group:nth-child(7)
+{
     grid-column: span 1;
 }
 
@@ -582,4 +584,12 @@ footer {
     color: white;
     margin-top: 20px;
     padding: 8px 0px;
+}
+
+.signup-sign-link-parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
 }
