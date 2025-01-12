@@ -133,7 +133,7 @@ body {
 
 .navigationBar {
     width: 80%;
-    margin: 0 auto;
+    margin: 0px 0px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
