@@ -11,7 +11,7 @@ const authCheck = () => {
         window.location.replace("./dashboard.html")
     }
 }
-authCheck();
+
 
 
 const signin = async () => {
