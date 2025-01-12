@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section class="navigationBar">
+        <div class="nav-links">
+            <a href="./dashboard.html" class="logo"><i class="fa-solid fa-wheat-awn"></i>Argiswara</a>
+            <div>
+                <ul>
+                    <li><a href="./privateBlogPost.html">My Blogs</a></li>
+                    <li><a href="./publicBlogPost.html"> Public Blogs</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="button-group">
+            <button><a href="./profileUser.html">Your Profile</a></button>
+            <button id="signOutButton">Sign Out</button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    <main class="about-us-container">
+        <div class="title-container ">
+            <h2>Contact Us</h2>
+            <p>We’d love to hear from you! Whether you have questions, feedback, or need assistance, we’re here to help.
+                Reach out to us through any of the following ways:</p>
+        </div>
+
+        <div class="title-container ">
+            <h2>Get in Touch</h2>
+            <p>
+            <ul>
+                <li><span>Phone:</span> +923350348089</li>
+                <li><span>Email:</span> alik95997@gmail.com</li>
+                <li><span>Address:</span> Liaquatabad, Karachi</li>
+            </ul>
+            </p>
+        </div>
+
+        <div class="title-container ">
+            <h2>Connect with Us Online</h2>
+            <p>
+                Follow us on social media to stay updated with the latest news and updates:
+            <ul>
+                <li><span>Facebook:</span> We uphold transparency and ethical practices.</li>
+                <li><span>Github:</span>https://github.com/alik95997</li>
+                <li><span>LinkedIn :</span>https://www.linkedin.com/in/ali-ahmed-002432187/</li>
+            </ul>
+            </p>
+        </div>
+        <div class="title-container send-messageContainer">
+            <h2>Send Us a Message</h2>
+            
+                <label for="name">Name:</label>
+                <input type="text" id="messageUserName" name="messageUserName" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="messageUserEmail" name="messageUserEmail" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" onclick="sendUsMessage()">Send Message</button>
+
+        </div>
+        <div>
+            <p>Your feedback is invaluable to us. Don’t hesitate to reach out—we look forward to connecting with you!
+            </p>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column icons">
+                <a href="" class="logo"><i class="fa-solid fa-wheat-awn"></i>Argiswara</a>
+                <p>Rajawali street No.45, Magelang New City, Central Java 6725 Indonesia</p>
+                <i class='fab fa-linkedin-in'></i>
+                <i class='fab fa-twitter'></i>
+                <i class='fab fa-facebook-f'></i>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Company Category</li>
+                    <li>Agribusiness</li>
+                    <li>Financial Service</li>
+                    <li>Iot Service Provider</li>
+                    <li>Educational instituition</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Individual Company</li>
+                    <li>Cultivator</li>
+                    <li>Agricultural Consumes</li>
+                    <li>Agricultural Expert</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Partner</li>
+                    <li>Capital</li>
+                    <li>Market</li>
+                    <li>Smart Farming</li>
+                    <li>Agrispedia</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Company</li>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="terms">
+        <p>© 2024 Agriswara. All right reserved</p>
+        <p>Privacy Policy Terms Of Use</p>
+    </div>
+</body>
+<script src="./contact.js" type="module"></script>
+
+</html>

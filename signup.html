@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body id="body">
+    <main class="">
+        <div class="signup-heading">
+            <a href="" class="logo"><i class="fa-solid fa-wheat-awn"></i>Argiswara</a>
+            <h1>Sign Up</h1>
+            <p>Create your account to unlock exclusive features and stay connected. Signing up is quick, easy, and
+                free—start your journey with us today!" </p>
+        </div>
+        <div class="form ">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" placeholder="Enter first name" id="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" placeholder="Enter last name" id="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" placeholder="Enter your email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter password" id="password" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Confirm password" id="cpassword" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="facebook-profile (optional)" id="facebookProfile">
+                <input type="text" placeholder="linked-in profile (optional)" id="linkedInProfile">
+                <input type="text" placeholder="twitter profile (optional)" id="twitterProfile">
+                <input type="text" placeholder="Whatsapp Number (optional)" id="whatsappProfile">
+            </div>
+            <div class="form-group form-button">
+                <button id="signup">Sign Up</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./signup.js" type="module"></script>
+
+</html>

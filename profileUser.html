@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h1 {
+            text-align: center;
+            margin: 20px 0px;
+        }
+
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            max-width: 300px;
+            margin: auto;
+            text-align: center;
+            font-family: arial;
+        }
+
+        .title {
+            color: grey;
+            font-size: 18px;
+        }
+
+        .card button {
+            border: none;
+            outline: 0;
+            display: inline-block;
+            padding: 8px;
+            color: white;
+            background-color: #000;
+            text-align: center;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .card a {
+            text-decoration: none;
+            font-size: 22px;
+            color: black;
+        }
+
+        .card button:hover,
+        a:hover {
+            opacity: 0.7;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <section class="navigationBar">
+        <div class="nav-links">
+            <a href="./dashboard.html" class="logo"><i class="fa-solid fa-wheat-awn"></i>Argiswara</a>
+            <div>
+                <ul>
+                    <li><a href="./privateBlogPost.html">My Blogs</a></li>
+                    <li><a href="./publicBlogPost.html"> Public Blogs</a></li>
+                    <li><a href="./profileUser.html">Profile</a></li>
+                    <li><a href="./aboutUs.html">About Us</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button><a href="./profileUser.html">Your Profile</a></button>
+            <button id="signOutButton">Sign Out</button>
+        </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <h1>Your Profile</h1>
+    <div id="profileContainer" class="card"></div>
+    <footer>
+        <div class="footer-links">
+            <div class="footer-column icons">
+                <a href="" class="logo"><i class="fa-solid fa-wheat-awn"></i>Argiswara</a>
+                <p>Rajawali street No.45, Magelang New City, Central Java 6725 Indonesia</p>
+                <i class='fab fa-linkedin-in'></i>
+                <i class='fab fa-twitter'></i>
+                <i class='fab fa-facebook-f'></i>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Company Category</li>
+                    <li>Agribusiness</li>
+                    <li>Financial Service</li>
+                    <li>Iot Service Provider</li>
+                    <li>Educational instituition</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Individual Company</li>
+                    <li>Cultivator</li>
+                    <li>Agricultural Consumes</li>
+                    <li>Agricultural Expert</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Partner</li>
+                    <li>Capital</li>
+                    <li>Market</li>
+                    <li>Smart Farming</li>
+                    <li>Agrispedia</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <ul>
+                    <li>Company</li>
+                    <li>About Us</li>
+                    <li>Blog</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <div class="terms">
+        <p>© 2024 Agriswara. All right reserved</p>
+        <p>Privacy Policy Terms Of Use</p>
+    </div>
+
+
+
+</body>
+<script src="./profileUser.js" type="module"></script>
+
+</html>
