@@ -1,4 +1,4 @@
-import { app, auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, getFirestore, collection, setDoc, doc, db, getDocs, getDoc, addDoc, query, where, signOut } from "./firebase.js"
+import { app, auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, getFirestore, collection, limit, setDoc, doc, db, getDocs, getDoc, addDoc, query, where, signOut } from "./firebase.js"
 const addPostButton = document.querySelector("#addPostButton");
 const userUID = localStorage.getItem("uid");
 
@@ -13,7 +13,7 @@ const authCheck = () => {
 const publicBlogPost = document.querySelector("#publicBlogPost");
 const getPost = async () => {
     try {
-        const q = query(collection(db, "blogPost"), where("isPrivate", "==", false))
+        const q = query(collection(db, "blogPost"), where("isPrivate", "==", false),limit(3))
 
         // const snapshot = await getDocs(collection(db, "blogPost"))
         const snapshot = await getDocs(q)
