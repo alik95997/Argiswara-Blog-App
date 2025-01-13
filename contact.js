@@ -28,21 +28,34 @@ const signOutUser = () => {
 
 const sendUsMessage = async () => {
     try {
-        const messageUserName = document.querySelector("#messageUserName");
-        const messageUserEmail = document.querySelector("#messageUserEmail");
-        const message = document.querySelector("#message");
+        // Get input values
+        const messageUserName = document.querySelector("#messageUserName").value.trim();
+        const messageUserEmail = document.querySelector("#messageUserEmail").value.trim();
+        const message = document.querySelector("#message").value.trim();
+
+        // Create the message object
         const messageObj = {
-            messageUserName: messageUserName.value,
-            messageUserEmail: messageUserEmail,
-            message: message
+            messageUserName,
+            messageUserEmail,
+            message
+        };
+
+        // Validate inputs
+        if (!messageUserName || !messageUserEmail || !message) {
+            throw new Error("All fields are required.");
         }
-        await addDoc(collection(db, "messageByUser"), messageObj)
-        alert("Message Send Us Successfully")
+
+        // Add document to Firestore
+        await addDoc(collection(db, "messageByUser"), messageObj);
+        alert("Message sent successfully!");
     } catch (error) {
-        console.log("error", error.message);
-        alert("error", error.message)
+        console.error("Error:", error.message);
+        alert(`Error: ${error.message}`);
     }
-}
+};
+
+// Expose the function to the global scope
+window.sendUsMessage = sendUsMessage;
 
 
 
@@ -56,4 +69,4 @@ hamburger.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
 
-window.sendUsMessage = sendUsMessage;
+
