@@ -34,8 +34,7 @@ const sendUsMessage = async () => {
         const messageObj = {
             messageUserName: messageUserName.value,
             messageUserEmail: messageUserEmail,
-            message: message,
-            messageDate: new Date().toDateString
+            message: message
         }
         await addDoc(collection(db, "messageByUser"), messageObj)
         alert("Message Send Us Successfully")
