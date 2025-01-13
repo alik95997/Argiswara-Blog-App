@@ -33,8 +33,8 @@ const sendUsMessage = async () => {
         const message = document.querySelector("#message");
         const messageObj = {
             messageUserName: messageUserName.value,
-            messageUserEmail: messageUserEmail,
-            message: message
+            messageUserEmail: messageUserEmail.value,
+            message: message.value
         }
         await addDoc(collection(db, "messageByUser"), messageObj)
         alert("Message Send Us Successfully")
