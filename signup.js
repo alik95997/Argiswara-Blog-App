@@ -13,7 +13,7 @@ const linkedInProfile = document.querySelector("#linkedInProfile");
 const twitterProfile = document.querySelector("#twitterProfile");
 const whatsappProfile = document.querySelector("#whatsappProfile");
 const signup = async () => {
-    if (!password.value === cpassword.value) {
+    if (password.value !== cpassword.value) {
         alert("password do not match")
         return
     }
