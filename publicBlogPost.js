@@ -22,7 +22,7 @@ const getPost = async () => {
         snapshot.forEach((doc) => {
             const data = doc.data();
             const singlePost = document.createElement("div");
-            singlePost.className = "single-post border col";
+            singlePost.className = "single-post border col-4";
             singlePost.innerHTML = `
                 <p>${new Date(data.createdAt).toLocaleDateString()}</p>
                 <h3>${data.title}</h3>
