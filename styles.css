@@ -192,6 +192,7 @@ a:hover {
 }
 
 .button-group button {
+    font-size: 12px !important;
     background: initial;
     border-radius: 25px;
     padding: 7px 15px;
@@ -354,8 +355,19 @@ a:hover {
     cursor: pointer;
 }
 
-.displayingPost .single-post {
-    width: 18rem;
+.publicBlogPost {
+    font-size: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.single-post {
+    padding: 20px;
+    min-width: 18rem;
+    max-width: 18rem;
 }
 
 .displayingPost .single-post h3 {
@@ -541,7 +553,7 @@ footer {
         justify-content: center;
         margin: 0 auto;
         align-items: center;
-        gap: 20px;
+        gap: 8px;
     }
 
     .nav-links ul.active {
@@ -556,6 +568,7 @@ footer {
 
     .button-group button {
         padding: 0px 24px;
+        font-size: 12px;
     }
 }
 
